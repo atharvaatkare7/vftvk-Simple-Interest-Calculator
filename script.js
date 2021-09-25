@@ -10,7 +10,7 @@ function updateRate()
 }
 function compute()
 {
-    var p = document.getElementById("principal").value;
+    let p = document.getElementById("principal").value;
     if(p == 0 || p << 0){
     alert("Enter a positive number");
     p.focus();
