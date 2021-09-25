@@ -11,9 +11,11 @@ function updateRate()
 function compute()
 {
     var p = document.getElementById("principal").value;
-    document.getElementById("result").innerHTML="If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+amount+",\<br\>in the year "+year+"\<br\>"
-}
-if(p == 0 || p << 0){
+    if(p == 0 || p << 0){
     alert("Enter a positive number");
     p.focus();
+    }
+    else{
+    document.getElementById("result").innerHTML="If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+amount+",\<br\>in the year "+year+"\<br\>"
+    }
 }
